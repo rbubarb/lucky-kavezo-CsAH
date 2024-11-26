@@ -1,2 +1,1 @@
-# lucky-kavezo-CsAH
-nem igazán tudok mit írjak ide XD
+# Lucky Kávézó (CsAH-edition)
