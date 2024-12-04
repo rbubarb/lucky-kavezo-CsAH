@@ -136,5 +136,5 @@ body .line {
 body {
     background-image: url("../pics/bg.jpg");
     background-attachment: fixed;
-    background-size: 100vw;
+    background-size: cover;
 }
