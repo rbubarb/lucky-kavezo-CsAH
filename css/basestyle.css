@@ -5,6 +5,46 @@
     to {filter: blur(0px);}
 }
 
+@keyframes enter-exit {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes enter-exit-nav {
+    0% {
+        transform: rotateY(10deg);
+        opacity: 0.5;
+    }
+    100% {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+.enterclass1 {
+    animation-name: enter-exit;
+    animation-duration: 1s;
+}
+
+.entergroup1 {
+
+}
+
+.enterclass2 {
+    animation-name: enter-exit-nav;
+    animation-duration: 1s;
+}
+
+.entergroup2 {
+
+}
+
 * {
     margin: 0;
     padding: 0;
