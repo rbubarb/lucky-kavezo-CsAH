@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-@keyframes in {
-    from {filter: blur(2px);}
-    to {filter: blur(0px);}
+@keyframes bgrainbow {
+    0% {
+        backdrop-filter: hue-rotate(0deg);
+    }
+    50% {
+        backdrop-filter: hue-rotate(20deg);
+    }
+    100% {
+        backdrop-filter: hue-rotate(0deg);
+    }
 }
 
 @keyframes enter-exit {
@@ -217,6 +224,10 @@ body {
     background-image: url("../pics/bg.jpg");
     background-attachment: fixed;
     background-size: cover;
+
+    animation-name: bgrainbow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 .image_thing {
