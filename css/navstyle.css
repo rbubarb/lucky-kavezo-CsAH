@@ -35,6 +35,8 @@ body {
     border-radius: 0 0 20% 20%;
 
     filter: drop-shadow(0px 10px 10px black);
+
+    transition-duration: 1s;
 }
 
 .navbar .logic {
@@ -98,6 +100,62 @@ body {
     filter: drop-shadow(0px 10px 10px black);
 }
 
+.navbar.fullscreen {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+
+    border-radius: 0;
+    z-index: 10;
+}
+
+.navbar.fullscreen .logic {
+    display: flex;
+    justify-content:start;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar.fullscreen .logic .logo {
+    background-image: linear-gradient(180deg, rgba(96, 209, 145, 0) 0%, rgba(49, 146, 91, 0) 50.52%, rgba(22, 92, 71, 0) 53.12%, rgba(10, 55, 42, 0) 100%);
+    
+    border-radius: 0;
+
+    filter: drop-shadow(0px 0px 0px black);
+
+    text-align: center;
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.navbar.fullscreen .logic .navlink {
+    width: 40%;
+    margin-left: 10px;
+    align-content: left;
+}
+
+.navbar.fullscreen .logic .navlink p {
+    text-align: left;
+    border-bottom: 3px dotted white;
+    filter: drop-shadow(0px 1px 2px rgb(0, 0, 0));
+    border-radius: 0 0 100% 0;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    transition-duration: 0.15s;
+}
+
+.navbar.fullscreen .logic .navlink p:hover {
+    border-bottom: 3px solid rgb(172, 240, 194);
+    filter: drop-shadow(0px 2px 4px rgb(0, 0, 0));
+    margin-bottom: -10px;
+    color: rgb(172, 240, 194);
+    font-size: xx-large;
+}
+
 @media (max-width: 950px) {
     .navbar .logic .navlink p {
         border-bottom: none;
@@ -111,5 +169,9 @@ body {
 @media (max-width: 750px) {
     .navbar .logic .navlink {
         display: none;
+    }
+
+    .navbar.fullscreen .logic .navlink {
+        display: block;
     }
 }
