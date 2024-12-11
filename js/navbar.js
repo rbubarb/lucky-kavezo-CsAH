@@ -8,10 +8,10 @@ let link_text_table = {
 document.body.onload = makeNavbar(["index", "kavek", "logo", "suti", "blog"]);
 
 function makeNavbar(args) {
-    let navbar = document.createElement("div");
+    let navba = document.createElement("div");
 
-    navbar.className = "navbar";
-    navbar.classList.add("entergroup2");
+    navba.className = "navbar";
+    navba.classList.add("entergroup2");
     
     
     let nav_logic = document.createElement("div");
@@ -43,7 +43,7 @@ function makeNavbar(args) {
         }
     });
     
-    navbar.appendChild(nav_logic);
+    navba.appendChild(nav_logic);
 
     document.body.appendChild(navbar);
 }
