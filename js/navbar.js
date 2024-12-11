@@ -13,6 +13,7 @@ function makeNavbar(args) {
     navbar.className = "navbar";
     navbar.classList.add("entergroup2");
     
+    
     let nav_logic = document.createElement("div");
 
     nav_logic.className = "logic";
